@@ -1,0 +1,82 @@
+.App-header {
+  background-color: #282c34; /* El color oscuro de la imagen */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.links-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+/* Estilos para el Centro de Descargas */
+.App-download-bg {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.download-title { color: #007bff; margin-bottom: 10px; }
+.download-subtitle { color: #666; font-size: 0.9rem; margin-bottom: 30px; }
+
+/* Botones del menú */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.btn-blue { background-color: #0d6efd; }
+.btn-green { background-color: #198754; }
+.btn-dark { background-color: #212529; }
+.btn-back { background-color: #212529; margin-top: 20px; }
+
+/* Botón que parece link en la home */
+.link-button {
+  background: none;
+  border: none;
+  color: #61dafb;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.foto-circular {
+  width: 200px;          /* Ajusta el ancho a tu gusto */
+  height: 200px;         /* Debe ser igual al ancho para que sea un círculo perfecto */
+  border-radius: 50%;    /* Esto es lo que la hace circular */
+  object-fit: cover;     /* Evita que la foto se estire feo si no es cuadrada */
+  border: 3px solid #61dafb; /* Opcional: un borde color React */
+}
