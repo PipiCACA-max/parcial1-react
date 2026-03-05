@@ -100,13 +100,13 @@ function App() {
             </button>
             <button
               className="m-btn m-verde"
-              onClick={() => setModalImagen('/3_agiles.jpg')}
+              onClick={() => setModalImagen('/3_agiles.png')}
             >
               ÁGILES
             </button>
             <button
               className="m-btn m-rojo"
-              onClick={() => setModalImagen('/4_scrum.jpg')}
+              onClick={() => setModalImagen('/4_scrum.png')}
             >
               SCRUM
             </button>
