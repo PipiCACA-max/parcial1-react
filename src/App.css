@@ -33,13 +33,20 @@
   background: white;
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 400px;
 }
 
-.download-title { color: #007bff; margin-bottom: 10px; }
-.download-subtitle { color: #666; font-size: 0.9rem; margin-bottom: 30px; }
+.download-title {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.download-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
 
 /* Botones del menú */
 .btn {
@@ -56,10 +63,19 @@
   font-size: 0.8rem;
 }
 
-.btn-blue { background-color: #0d6efd; }
-.btn-green { background-color: #198754; }
-.btn-dark { background-color: #212529; }
-.btn-back { background-color: #212529; margin-top: 20px; }
+.btn-blue {
+  background-color: #0d6efd;
+}
+.btn-green {
+  background-color: #198754;
+}
+.btn-dark {
+  background-color: #212529;
+}
+.btn-back {
+  background-color: #212529;
+  margin-top: 20px;
+}
 
 /* Botón que parece link en la home */
 .link-button {
@@ -74,9 +90,167 @@
 }
 
 .foto-circular {
-  width: 200px;          /* Ajusta el ancho a tu gusto */
-  height: 200px;         /* Debe ser igual al ancho para que sea un círculo perfecto */
-  border-radius: 50%;    /* Esto es lo que la hace circular */
-  object-fit: cover;     /* Evita que la foto se estire feo si no es cuadrada */
+  width: 200px; /* Ajusta el ancho a tu gusto */
+  height: 200px; /* Debe ser igual al ancho para que sea un círculo perfecto */
+  border-radius: 50%; /* Esto es lo que la hace circular */
+  object-fit: cover; /* Evita que la foto se estire feo si no es cuadrada */
   border: 3px solid #61dafb; /* Opcional: un borde color React */
+}
+
+/* Contenedor Principal Parcial 2 */
+.App-parcial2-bg {
+  background-color: #ffffff;
+  color: #1a202c;
+  padding: 40px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.metodologias-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Divisores sutiles */
+.divisor {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 30px 0;
+}
+
+/* Grid de Botones de Metodologías */
+.grid-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.m-btn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+/* Colores de los botones */
+.m-azul {
+  background-color: #1a73e8;
+}
+.m-gris {
+  background-color: #718096;
+}
+.m-verde {
+  background-color: #27ae60;
+}
+.m-rojo {
+  background-color: #e53e3e;
+}
+.m-amarillo {
+  background-color: #f6ad55;
+}
+.m-celeste {
+  background-color: #00bcd4;
+}
+.m-negro {
+  background-color: #2d3748;
+}
+
+.fila-centrada {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Botón Regresar Principal (Estilizado) */
+.btn-fancy-back {
+  background: transparent;
+  border: 2px solid #3182ce;
+  color: #3182ce;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-fancy-back:hover {
+  background-color: #3182ce;
+  color: white;
+  box-shadow: 0 4px 15px rgba(49, 130, 206, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Texto de pie de página */
+.frase-destacada {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.nombre-alumno {
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* Estilos del Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-img-full {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.modal-close-x {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-x:hover {
+  background: #f0f0f0;
+  color: #000;
 }
